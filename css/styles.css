@@ -1,0 +1,15 @@
+.w-60{
+  width : 60%
+}
+
+.bg-green{
+  background-color: #d7fef7;
+}
+
+.bg-main{
+  background-color: #075f4f;
+}
+
+.btn:hover{
+  background-color:#25917D  !important;
+}
