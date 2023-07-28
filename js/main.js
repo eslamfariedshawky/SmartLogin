@@ -16,9 +16,9 @@ else {
 
 
 
-const currentUrl = window.location.pathname
+const currentUrl = window.location.href
 console.log(currentUrl)
-if(currentUrl=="/index.html")
+if(currentUrl=="https://eslamfariedshawky.github.io/SmartLogin/#home.html")
 {
   main()
   console.log("here")
