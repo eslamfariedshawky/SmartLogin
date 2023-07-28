@@ -12,23 +12,23 @@ else {
     data = []; 
 }
 }
-
-
+var path = window.location.pathname.length-7
+console.log(window.location.pathname[path])
 
 
 const currentUrl = window.location.pathname
 console.log(currentUrl)
-if(currentUrl=="/index.html")
+if(window.location.pathname[path]=="e")
 {
   main()
   console.log("here")
 }
-if(currentUrl=="/Sign_up.html")
+if(window.location.pathname[path]=="u")
 {
   signUp()
   console.log("signup")
 }
-if(currentUrl=="/home.html")
+if(window.location.pathname[path]=="m")
 {
   if(localStorage.login == null)
     {
@@ -68,7 +68,7 @@ function main(){
         if(checkUserData())
         {
           
-          window.open("/home.html","_self")
+          window.open("home.html","_self")
         }
         else{
           s3.innerHTML = "Invalid E-mail or Password"
@@ -80,7 +80,7 @@ function main(){
 
 
   function openSignUp(){
-      window.open("/Sign_up.html","_self")
+      window.open("Sign_up.html","_self")
       console.log("hssssssi")
   }
 
@@ -140,7 +140,7 @@ function signUp(){
            else{
             add();
             window.alert("account Added Successfuly ")
-            window.open("/index.html","_self")
+            window.open("index.html","_self")
 
            }
           
@@ -197,7 +197,7 @@ function home()
     function clear ()
     {
       resetAll();
-      window.open("/index.html","_self")
+      window.open("index.html","_self")
       localStorage.removeItem('login')
 
     }
@@ -207,7 +207,7 @@ function home()
 
     function logingOut()
     {
-      window.open("/index.html","_self")
+      window.open("index.html","_self")
       localStorage.removeItem('login')
 
     }
