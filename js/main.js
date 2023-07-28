@@ -18,17 +18,18 @@ console.log(window.location.pathname[path])
 
 const currentUrl = window.location.pathname
 console.log(currentUrl)
-if(window.location.pathname[path]=="e")
+console.log(document.title)
+if(document.title == "main")
 {
   main()
   console.log("here")
 }
-if(window.location.pathname[path]=="u")
+if(document.title == "signup")
 {
   signUp()
   console.log("signup")
 }
-if(window.location.pathname[path]=="m")
+if(document.title == "home")
 {
   if(localStorage.login == null)
     {
